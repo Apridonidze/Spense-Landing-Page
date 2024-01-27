@@ -1,0 +1,330 @@
+body {
+    width: 100%;
+    height: auto;
+    font-family: 'Rubik', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.head {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    cursor: pointer;
+    position: sticky;
+    top: -1px;
+    font-size: 14px;
+}
+.bar-left a {
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+}
+.head a {
+    color: white;
+}
+.headerer {
+    background-color: #f0eeeb;
+    padding: 20px 80px;
+}
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bar-toggle {
+    display: none;
+}
+.btn-toggle {
+    display: none;
+}
+.bar-main ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    cursor: pointer;
+}
+.bar-main ul :hover {
+    text-decoration: underline;
+}
+.bar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.bar-right a{
+    color: black;
+    text-decoration: none;
+}
+.bar-right button {
+    width: 160px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.bar-right button :hover {
+    background-color: rgb(39, 39, 39);
+}
+.header {
+    flex-wrap: wrap-reverse;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-left {
+    width: 100%;
+    max-width: 700px;
+}
+.header-left h1 {
+    margin: 0;
+    font-size: 52px;
+    color: #292929;
+}
+.header-left h2{
+    color: #5a5444;
+    font-weight: lighter;
+    font-size: 18px;
+}
+.header-right img {
+    width: 100%;
+    max-width: 400px;
+}
+.check {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.email {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 200px;
+}
+.email input {
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.email button {
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: fit-content;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px 60px;
+}
+.icons img {
+    width: 160px;
+}
+.secure {
+    display: flex;
+    background-color: #f0eeeb;
+    color: black;
+    width: 100%;
+    max-width: 900px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+    padding: 40px 20px;
+}
+.secure-left {
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+}
+.secure-left h1 {
+    font-size: 52px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0;
+}
+.secure-left h2 {
+    color: #5a5444;
+    font-size: 18px;
+    width: 100%;
+    max-width: 580px;
+}
+.secure-left a {
+    color: #5a5444;
+    text-decoration: underline;
+}
+.editor {
+    width: 100%;
+    max-width: 900px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.editor h1 {
+    margin: 0;
+    font-size: 42px;
+}
+.editor a {
+    display: flex;
+    margin: auto;
+    font-size: 24px;
+    align-items: center;
+    color: #5a5444;
+}
+.footer {
+    background-color: black;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    flex-wrap: wrap;
+}
+.footer-left {
+    width: 100%;
+    max-width: 400px;
+}
+.footer-left h1 {
+    font-size: 42px;
+    margin: 0;
+}
+.footer-left h2 {
+    font-size: 18px;
+    color: #9e9e9e;
+}
+.footer-right {
+    display: flex;
+    gap: 20px;
+}
+.footer-right ul {
+    list-style: none;
+}
+.footer-right li {
+    cursor: pointer;
+}
+.footer-right ul :hover {
+    text-decoration: underline;
+}
+.footer-right h3 {
+    text-decoration: none;
+    list-style: none;
+}
+@media (max-width:480px){
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .head {
+        display: flex;
+        align-items: center;
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+    }
+    .headerer {
+        padding: 10px;
+    }
+    .bar{
+        display: flex;
+        align-items: center;
+        padding: 0px;
+    }
+    .bar-right {
+        display: none;
+    }
+    .bar-main {
+        display: none;
+    }
+    .btn-toggle {
+        display: flex;
+    }
+    .bar-toggle {
+        position: absolute;
+        padding-bottom: 20px;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        background-color: white;
+        color: black;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .toggle-left ul {
+        display: block;
+        align-items: center;
+        list-style: none;
+    }
+    .toggle-left h1 {
+        padding-left: 40px;
+    }
+    .toggle-left a {
+        padding-left: 40px;
+        color: black;
+    }
+    .toggle-left button {
+        width: 120px;
+        height: 30px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        display: block;
+        margin-left: 40px;
+        margin-top:10px;
+    }
+    .toggle-right {
+        padding-right: 40px;
+    }
+    .btn-close {
+        padding-right: 20px;
+    }
+    .footer-right {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header {
+        padding-top: 40px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .header-right img {
+        width: 100%;
+        max-width: 400px;
+    }
+    .secure {
+        padding: 0px;
+    }
+}
